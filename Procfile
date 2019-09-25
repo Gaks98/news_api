@@ -1,0 +1,1 @@
+web: ./build/install/news_api/bin/news_api

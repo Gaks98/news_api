@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>News Form</title>
+    <link rel="stylesheet" href="/css/form.css" type="text/css">
+</head>
+<body>
+<div class=" container-fluid">
+    <div class="row">
+        <div class="col-sm-4"></div>
+
+        <div class="col-sm-4" id="center">
+
+
+            <div id="pic" class="img-responsive">
+                <img src="https://bit.ly/2lkmh0o">
+            </div>
+
+            <h4><a href="/">Home</a></h4>
+            <h2 >Add News</h2>
+
+            <form action="/new/news" method="POST">
+
+                <div class="form-group">
+                    <label for="name">Title
+                        <input id="title" name="title" placeholder="Title" type="text" tabindex="1" required autofocus>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="content">Content
+                        <input id="content" name="content" placeholder="Content" type="text" tabindex="1" required autofocus>
+                    </label>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="role">Department
+                            <input id="departmentId" name="departmentId" placeholder="departmentId" type="number" tabindex="1" required autofocus>
+                    </label><br>
+                </div>
+
+
+                <button type="submit" class="btn btn-success">Add News</button>
+                <br>
+            </form>
+        </div>
+
+        <div class="col-sm-4" id="col3">
+            <div id="after_submit">
+                <p id="message"></p>
+                <p id="number_correct"></p>
+                <img id="picture">
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
